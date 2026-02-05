@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multimedia</title>
+    
+</head>
+<body>
+<!--image with wrong path -->
+<img src="images/photo.jpg" alt="A beautiful scenery" width="600" height="400">
+<!--corrected image path-->
+<img src="../assests/illustration-anime-character-rain (5).jpg" alt="animepic" width="250">
+
+
+<!-- responsive image using picture element -->
+<picture>
+    <source srcset="../assests/files/large.jpg" media="(min-width : 1000px)" type="image/jpg">
+    <source srcset="../assests/files/medium2.jpg" media="(min-width : 600px)" type="image/jpg" >
+    <source srcset="../assests/files/small.jpg" media="(min-width : 300px)" type="image/jpg" >
+    <img src="../assests/files/small2.jpg" title="medium2" alt="medium2">
+</picture>
+<hr>
+
+<!--video with controls -->
+<video controls width="600" height="400" autoplay muted loop title="car" poster="assests/files/medium.jpg">
+    <source src="../assests/files/videos/car.mp4" type="video/mp4">
+    <source src="../assests/files/videos/car.webm" type="video/webm">
+    <!--subtitles / captions -->
+    <track src="../assests/files/videos/subtitles/sample.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="../assests/files/videos/subtitles/arabic.vtt" kind="subtitles" srclang="ar" label="Arabic">    
+</video>
+<hr>
+
+<!--audio with controls -->
+<audio controls autoplay loop muted title="nature sounds">
+    <source src="../assests/files/audios/audio_file1.mp3" type="audio/mp3">
+    <source src="../assests/files/audios/audio_file2.mp3" type="audio/mp3">
+    
+</audio>
+
+</body>
+</html>
